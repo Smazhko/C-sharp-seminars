@@ -2,6 +2,13 @@
 // Напишите программу, которая на вход принимает два числа и выдаёт, 
 // какое число большее, а какое меньшее.
 // ================================================================
+/*
+int InputNum (string message)
+{
+    Console.Write(message);
+    int userNum = Convert.ToInt32(Console.ReadLine());
+    return userNum;
+}
 
 int FindMax (int num1, int num2)
 {
@@ -19,11 +26,9 @@ int FindMin (int num1, int num2)
         return num2;
 }
 
-Console.Write("Введите первое число... ");
-int userNum1 = Convert.ToInt32(Console.ReadLine());
+int userNum1 = InputNum("Введите первое число... ");
 
-Console.Write("Введите второе число... ");
-int userNum2 = Convert.ToInt32(Console.ReadLine());
+int userNum2 = InputNum("Введите второе число... ");
 
 int max = FindMax(userNum1, userNum2);
 int min = FindMin(userNum1, userNum2);
@@ -48,14 +53,21 @@ if (userNumb1 < userNumb2)
 }
 
 System.Console.WriteLine($"Максимальное число из пары = {maxN}, минимальное = {minN}.");
-
+*/
 
 // ------------------------------------------------------------------
 // задача 4.=========================================================
 // Напишите программу, которая принимает на вход 
 // три числа и выдаёт максимальное из этих числел.
 // ==================================================================
-/*
+
+int InputNum (string message)
+{
+    Console.Write(message);
+    int userNum = Convert.ToInt32(Console.ReadLine());
+    return userNum;
+}
+
 int FindMax (int num1, int num2, int num3)
 {
     int max = num1;
@@ -66,17 +78,11 @@ int FindMax (int num1, int num2, int num3)
     return max;
 }
 
-Console.Write("Введите первое число... ");
-int userNum1 = Convert.ToInt32(Console.ReadLine());
-
-Console.Write("Введите второе число... ");
-int userNum2 = Convert.ToInt32(Console.ReadLine());
-
-Console.Write("Введите третье число... ");
-int userNum3 = Convert.ToInt32(Console.ReadLine());
+int userNum1 = InputNum("Введите первое число... ");
+int userNum2 = InputNum("Введите второе число... ");
+int userNum3 = InputNum("Введите третье число... ");
 
 System.Console.WriteLine("Максимальное из этих трёх чисел = " + FindMax(userNum1, userNum2, userNum3));
-*/
 
 // задача 6.=========================================================
 // Напишите программу, которая на фход принимает число и выдает,
