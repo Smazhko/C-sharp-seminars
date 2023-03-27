@@ -63,7 +63,7 @@ string IsCross (double k1, double b1, double k2, double b2)
     }
 }
 
-string DefineSign (double b)
+string PrintSign (double b)
 {
     string sign = "+";
     if (b < 0) sign = "-";
@@ -77,4 +77,4 @@ double b1 = UserInput("                             Введите b1");
 double k2 = UserInput("Вторая прямая y = k2*x + b2. Введите k2");
 double b2 = UserInput("                             Введите b2");
 
-Console.WriteLine($"\nОтвет: прямые y={k1}x{DefineSign(b1)} и y={k2}x{DefineSign(b2)} {IsCross (k1, b1, k2, b2)}.");
+Console.WriteLine($"\nОтвет: прямые y={k1}x{PrintSign(b1)} и y={k2}x{PrintSign(b2)} {IsCross (k1, b1, k2, b2)}.");
