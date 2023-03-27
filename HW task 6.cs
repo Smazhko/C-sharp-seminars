@@ -41,7 +41,7 @@ Console.WriteLine($"В Вашем числовом ряду положитель
 double UserInput(string message)
 {
     Console.Write(message + "... ");
-    int num = Convert.ToInt32(Console.ReadLine());
+    int num = Convert.ToDouble(Console.ReadLine());
 
     return num;
 }
