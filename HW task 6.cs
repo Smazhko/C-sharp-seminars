@@ -70,5 +70,5 @@ double b1 = UserInput("                             Введите b1");
 double k2 = UserInput("Вторая прямая y = k2*x + b2. Введите k2");
 double b2 = UserInput("                             Введите b2");
 
-Console.WriteLine($"\nОтвет: данные прямые {IsCross (k1, b1, k2, b2)}.");
+Console.WriteLine($"\nОтвет: прямые y={k1}x+{b1} и y={k2}x+{b2} {IsCross (k1, b1, k2, b2)}.");
 */
